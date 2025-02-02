@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import QuestionCard from "./components/question-card";
 import Carta from "./components/carta";
+import { useConfig } from "./config-storage";
 
 const COLORS = ["#fff2", "#fff4", "#fff7", "#fffc"];
 
 function App() {
+
+    const { config } = useConfig();
+
   const generateSpaceLayer = (
     size: string,
     selector: string,
@@ -35,8 +39,14 @@ function App() {
     generateSpaceLayer("4px", ".space-3", 50, "15s");
   }, []);
 
-  const [openQuestion, setOpenQuestion] = useState(false);
+  const [openQuestion, setOpenQuestion] = useState(config?.saltarIntro === "S");
   const [openCard, setOpenCard] = useState(false);
+
+  useEffect(() => {
+    if (config?.saltarIntro === "S") {
+      setOpenQuestion(true);
+    }
+  }, [config]);
 
   const cancelQuest = () => {
     setOpenQuestion(false);
@@ -62,7 +72,7 @@ function App() {
           />
         )}
         {!openQuestion && !openCard && (
-          <h1 className='absolute z-20 text-6xl font-bold w-auto text-center  text-white -translate-y-16 cursor-default select-none reflejo-letra lg:text-9xl'>
+          <h1 className='absolute z-20 text-6xl font-bold w-auto text-center  text-white px-16 -translate-y-16 cursor-default select-none reflejo-letra lg:text-9xl'>
             UN MENSAJE DESDE LA LUNA
           </h1>
         )}
