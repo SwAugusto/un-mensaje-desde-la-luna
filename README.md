@@ -6,26 +6,28 @@ Este proyecto está inspirado en un regalo que desarrollé en el pasado. Ahora, 
 
 ## Configuración del Proyecto
 
-Para modificar el contenido del proyecto, debes editar el archivo `.env` que se encuentra dentro de la carpeta `dist`. Este archivo contiene las siguientes configuraciones:
+Para modificar el contenido del proyecto, debes editar el archivo `config.json` que se encuentra dentro de la carpeta `dist`. Este archivo contiene las siguientes configuraciones:
 
-```env
-VITE_PREGUNTA="¿Quieres ser mi San Valentín?"
-VITE_IMAGEN_PREGUNTA=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGtnNzJuZ3ZydjQ4emNxNHN6YmJkZ2d6Y2tlNmNhZDA0aGx6dTd1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7vDoUoDZHoUQxMPkd7/giphy.gif
-VITE_BOTON_ACEPTAR="¡Sí, quiero!"
-VITE_BOTON_RECHAZAR="No, gracias"
-VITE_NOMBRE_PARA="Nombre del destinatario"
-VITE_NOMBRE_DE="Augusto Chanamé"
-VITE_TEXTO_CARTA="Aquí puedes escribir el mensaje de la carta."
+```config
+pregunta="¿Quieres ser mi San Valentín?"
+imagenPregunta=https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGtnNzJuZ3ZydjQ4emNxNHN6YmJkZ2d6Y2tlNmNhZDA0aGx6dTd1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7vDoUoDZHoUQxMPkd7/giphy.gif
+botonAceptar="¡Sí, quiero!"
+botonRechazar="No, gracias"
+nombrePara="Nombre del destinatario"
+nombreDe="Augusto Chanamé"
+saltarIntro="S" o "N"
+textoCarta="Aquí puedes escribir el mensaje de la carta."
 ```
 
 Puedes modificar estos valores según tu preferencia:
-- **VITE_PREGUNTA**: La pregunta que aparecerá en la invitación.
-- **VITE_IMAGEN_PREGUNTA**: URL de la imagen o GIF que se mostrará con la pregunta.
-- **VITE_BOTON_ACEPTAR**: Texto del botón de aceptación.
-- **VITE_BOTON_RECHAZAR**: Texto del botón de rechazo.
-- **VITE_NOMBRE_PARA**: Nombre de la persona a la que va dirigida la carta.
-- **VITE_NOMBRE_DE**: Tu nombre o el nombre del remitente.
-- **VITE_TEXTO_CARTA**: Mensaje personalizado de la carta.
+- **pregunta**: La pregunta que aparecerá en la invitación.
+- **imagenPregunta**: URL de la imagen o GIF que se mostrará con la pregunta.
+- **botonAceptar**: Texto del botón de aceptación.
+- **botonRechazar**: Texto del botón de rechazo.
+- **nombrePara**: Nombre de la persona a la que va dirigida la carta.
+- **nombreDe**: Tu nombre o el nombre del remitente.
+- **saltarIntro**: Si quieres que vaya defrente a la pregunta, S de si y N de no.
+- **textoCarta**: Mensaje personalizado de la carta.
 
 ## Personalización de Estampillas
 
