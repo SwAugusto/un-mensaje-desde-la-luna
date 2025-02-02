@@ -1,5 +1,5 @@
 import Atropos from "atropos/react";
-import "atropos/css";
+import "atropos/atropos.css";
 import { useState } from "react";
 import Hoja from "./hoja";
 

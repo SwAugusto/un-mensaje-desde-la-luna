@@ -10,7 +10,7 @@ function Hoja({ closeHoja }: HojaProps) {
           className='h-full overflow-y-auto '
           style={{ scrollbarWidth: "thin" }}
         >
-          <p className='text-pretty'> {import.meta.env.VITE_TEXTO_CARTA}</p>
+          <p className='text-pretty text-xl font-semibold'> {import.meta.env.VITE_TEXTO_CARTA}</p>
         </div>
         <button
           type='button'
