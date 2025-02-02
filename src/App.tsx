@@ -52,7 +52,7 @@ function App() {
       <div className='space space-1'></div>
       <div className='space space-2'></div>
       <div className='space space-3'></div>
-      <div className='grid w-full h-full place-items-center'>
+      <div className='grid w-full h-full place-items-center p-10'>
         {openCard && <Carta />}
         {openQuestion && (
           <QuestionCard
@@ -62,7 +62,7 @@ function App() {
           />
         )}
         {!openQuestion && !openCard && (
-          <h1 className='absolute z-20 text-6xl font-bold text-center text-white -translate-y-16 cursor-default select-none reflejo-letra md:text-9xl'>
+          <h1 className='absolute z-20 text-6xl font-bold w-auto text-center  text-white -translate-y-16 cursor-default select-none reflejo-letra lg:text-9xl'>
             UN MENSAJE DESDE LA LUNA
           </h1>
         )}
@@ -74,11 +74,11 @@ function App() {
           <span></span>
           <span></span>
         </div>
-        <div className='absolute z-50 top-[90%]'>
+        <div className='absolute z-50 top-[80%]'>
           {!openQuestion && !openCard && (
             <button
               type='button'
-              className='p-2 bg-white border border-gray-100 rounded shadow-2xl border-button holaa'
+              className='p-2 bg-white border border-gray-100 rounded shadow-2xl border-button '
               onClick={() => setOpenQuestion(true)}
             >
               Abrir Mensaje
