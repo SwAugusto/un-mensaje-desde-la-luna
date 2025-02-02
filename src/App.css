@@ -1,0 +1,94 @@
+.clip-triangle {
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.space{
+    --size:2px;
+    --space-layer:4vw 50vh 0 #fff,
+    18vw 88vh 0 #fff;
+
+    width: var(--size);
+    height: var(--size);
+    background: #fff;
+    box-shadow:  var(--space-layer);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 75%;
+    animation: moveStars var(--duration) linear infinite;
+}
+
+.luna{
+    background: #9fb0df;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px #fff, inset -50px 0 30px #585858, inset 40px 10px 90px #f6fbfb;
+    animation: moveStars var(--duration) linear infinite;
+
+}
+
+.border-button{
+    position: relative;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.607);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.border-button:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.border-button::before{
+    content: "";
+        position: absolute;
+        inset: -3px;
+        z-index: -1;
+        background: linear-gradient(90deg, rgb(207, 163, 163), rgb(174, 158, 126), rgb(168, 168, 142), rgb(128, 172, 128), rgb(93, 131, 131), rgb(127, 127, 189), rgb(174, 118, 174));
+        border-radius: 8px;
+        animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+
+
+.luna span{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.luna span:first-child{
+    border: solid 4px rgba(121, 121, 121, .7) ;
+    border-right:solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 15%;
+    top: 20%;
+}
+
+.luna span:nth-child(2){
+    border: solid 4px rgba(121, 121, 121, .7) ;
+    border-right:solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 60%;
+    top: 40%;
+}
+
+@keyframes moveStars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
