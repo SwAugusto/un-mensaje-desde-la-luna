@@ -35,19 +35,19 @@ function Carta() {
             <>
               <article className='absolute z-20 flex flex-col items-end justify-end w-full px-4 pt-16'>
                 <img
-                  src='Estampa1.png'
+                  src='Estampa1.webp'
                   className='drop-shadow-md w-20 h-20'
                   alt='Estampa San Valetín 1'
                 />
               </article>
               <article className='absolute z-20 flex flex-col items-start justify-end w-full h-full px-4 py-4'>
                 <img
-                  src='Estampa2.png'
+                  src='Estampa2.webp'
                   className='drop-shadow-md w-20 h-20'
                   alt='Estampa San Valetín 1'
                 />
                 <img
-                  src='Estampa4.png'
+                  src='Estampa4.webp'
                   className='drop-shadow-md w-20 h-20'
                   alt='Estampa San Valetín 4'
                 />
@@ -92,12 +92,12 @@ function Carta() {
               <div className='flex'>
                 <article className='w-[100px] h-[100px] '>
                   <img
-                    src='Estampa3.png'
+                    src='Estampa3.webp'
                     className='drop-shadow-md w-20 h-20'
                     alt='Estampa San Valetín 3'
                   />
                   <img
-                    src='Estampa4.png'
+                    src='Estampa4.webp'
                     className='drop-shadow-md w-20 h-20'
                     alt='Estampa San Valetín 4'
                   />
