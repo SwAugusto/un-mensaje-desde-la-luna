@@ -63,7 +63,7 @@ function App() {
       <div className='space space-2'></div>
       <div className='space space-3'></div>
       <div className='grid w-full h-full place-items-center p-10'>
-        {openCard && <Carta />}
+        {openCard && <div className="h-full flex absolute justify-center items-center"><Carta /></div>}
         {openQuestion && (
           <QuestionCard
             AcceptQuest={acceptQuest}

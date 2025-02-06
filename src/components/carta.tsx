@@ -1,6 +1,6 @@
 import Atropos from "atropos/react";
 import "atropos/atropos.css";
-import { useState } from "react";
+import {  useState } from "react";
 import Hoja from "./hoja";
 import { useConfig } from "../config-storage";
 
@@ -12,17 +12,20 @@ function Carta() {
     setOpenCard(!openCard);
   };
 
+
+
   const { config } = useConfig();
 
   return (
     <>
-      <Atropos
+     <Atropos
         rotateXMax={20} // Rotación sutil en X
         rotateYMax={20} // Rotación sutil en Y
         highlight={false}
         rotateXInvert={false}
         rotateYInvert={false}
         shadow={false}
+
         className='w-full md:w-[950px] h-full md:h-[500px] absolute z-30 '
       >
         <div
@@ -103,7 +106,7 @@ function Carta() {
                   />
                 </article>
               </div>
-              <div className='flex flex-col items-end justify-end w-full h-full '>
+              <div className='flex flex-col items-end font-medium justify-end w-full h-full '>
                 <p>Para: {config!.nombrePara}</p>
                 <p>De: {config!.nombreDe}</p>
               </div>
@@ -111,7 +114,8 @@ function Carta() {
           )}
         </div>
       </Atropos>
-      {openCard && <Hoja closeHoja={closeHoja} />}
+      {openCard && <div className="absolute z-50 flex  justify-center items-center  w-full h-[90%]">
+        <Hoja closeHoja={closeHoja} /></div>}
     </>
   );
 }
