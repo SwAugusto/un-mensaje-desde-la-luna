@@ -35,6 +35,8 @@ Si deseas modificar las estampillas de la carta, puedes reemplazar los archivos 
 
 ## Despliegue Rápido en Netlify
 
+**Tutorial YT:** [Subir Proyecto a Netlify Drop](https://youtu.be/NudtElz8RZg).
+
 Una vez hayas realizado todas las modificaciones deseadas, puedes desplegar tu proyecto fácilmente sin necesidad de registrarte en ninguna plataforma.
 
 1. **Accede a** [Netlify Drop](https://app.netlify.com/drop).
